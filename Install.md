@@ -1,6 +1,6 @@
-# Configuração do Sublime Text 4
+# Configuração do Sublime Text 4 (Build 4169)
 
-Aqui estão os pacotes instalados no meu Sublime Text 4:
+Aqui estão os pacotes instalados no meu Sublime Text 4 (Build 4169):
 
 - [x] [ClangAutoComplete](https://github.com/pl-ca/ClangAutoComplete)
 - [x] [CppFastOlympicCoding](https://github.com/Jatana/FastOlympicCoding)
