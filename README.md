@@ -125,4 +125,11 @@ Verifique os logs do LSP.
 Reinstale o LSP e o cliente C++ se necessário.
 Se após todas essas etapas o problema persistir, pode haver um problema específico de ambiente ou configuração que necessite de uma investigação mais detalhada.
 
+> [!IMPORTANT]
+> Para configurar corretamente o SublimeLinter no Sublime Text, é essencial seguir as instruções detalhadas no arquivo `Install.md`.
+> Este documento contém passos cruciais que garantem o funcionamento adequado do SublimeLinter.
+
+> [!TIP]
+> Esta configuração está funcionando perfeitamente e sem erros, conforme indicado pela funcionalidade atual dos pacotes e ferramentas listadas acima.
+
 
