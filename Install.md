@@ -9,7 +9,8 @@ Aqui estão os pacotes instalados no meu Sublime Text 4:
 - [x] [SublimeLinter-eslint](https://github.com/SublimeLinter/SublimeLinter-eslint)
 - [x] [SublimeLinter-gcc](https://github.com/SublimeLinter/SublimeLinter-gcc)
 - [x] [Terminality](https://github.com/spywhere/Terminality)
-- [ ] [SublimeLinter](https://www.sublimelinter.com/en/master/) (Instalado mas desativado...)
+> [!WARNING]
+> [SublimeLinter](https://www.sublimelinter.com/en/master/) (Instalado mas desativado...)
 
 # Nota de rodapé: 
 Esta configuração é baseada nas minhas preferências de usuário e nos pacotes instalados no [Sublime Text 4 (Build 4169)](https://www.sublimetext.com), está funcionando perfeitamente e sem erros.
