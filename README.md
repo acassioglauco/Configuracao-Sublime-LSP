@@ -32,14 +32,16 @@ Abra as configurações do LSP no Sublime Text e adicione a configuração para 
 Certifique-se de substituir `/path/to/cache` por um caminho válido onde o ccls possa armazenar arquivos em cache.
 
 # 3. Verificar a Configuração do Projeto
+> [!NOTE]
+> Para garantir que o ccls funcione corretamente com o Sublime Text e reconheça erros em qualquer arquivo C++, você precisará criar um projeto na pasta desejada e adicionar as configurações específicas ao arquivo do projeto.
 
-Certifique-se de que você tenha um arquivo de projeto configurado corretamente no Sublime Text. Um arquivo de projeto (`.sublime-project`) pode ser algo assim:
+
 ```json
 {
     "folders":
     [
         {
-            "path": "."
+            "path": "."    // Aqui pode ser o caminho raiz da sua pasta, desde que crie o projeto aqui também...
         }
     ],
     "settings": {
