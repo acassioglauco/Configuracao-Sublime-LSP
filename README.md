@@ -21,7 +21,7 @@ Abra as configurações do LSP no Sublime Text e adicione a configuração para 
             "selector": "source.c++, source.c",
             "initializationOptions": {
                 "cache": {
-                    "directory": "/path/to/cache"
+                    "directory": "/path/to/cache"   // ~/Library/Caches/ccls
                 }
             }
         }
