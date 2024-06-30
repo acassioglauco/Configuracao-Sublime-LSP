@@ -18,7 +18,7 @@ Abra as configurações do LSP no Sublime Text e adicione a configuração para 
     "clients": {
         "ccls": {
             "command": ["ccls"],
-            "selector": "source.c++, source.c",
+            "selector": "source.c++, source.c, source.cpp",
             "initializationOptions": {
                 "cache": {
                     "directory": "/path/to/cache"   // ~/Library/Caches/ccls
