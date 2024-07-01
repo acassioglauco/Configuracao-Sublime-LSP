@@ -1,3 +1,6 @@
+# Integração do Language Server Protocol no Sublime Text: Guia Completo Baseado no setup do Neal Wu
+O projeto "Configuração Sublime LSP" é baseado no setup do competidor de programação Neal Wu. Ele fornece um guia detalhado sobre como configurar o Sublime Text para utilizar o Language Server Protocol (LSP). Inclui instruções passo a passo para instalar e configurar os pacotes necessários, garantindo uma integração suave do LSP no Sublime Text. Proporciona uma experiência de desenvolvimento mais rica com funcionalidades como autocompletar, navegação de código e diagnósticos em tempo real.
+
 # Configuração do Sublime Text 4 com LSP
 
 # 1. Instalar o ccls
