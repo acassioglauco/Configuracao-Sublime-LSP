@@ -23,15 +23,15 @@ A pasta "Telas" contém capturas de tela que demonstram o funcionamento perfeito
 Todas as capturas de tela na pasta "Telas" comprovam que a configuração está funcionando perfeitamente, conforme o guia detalhado de configuração. Cada funcionalidade é exibida em pleno funcionamento, mostrando a eficiência e a utilidade da integração do LSP no Sublime Text.
 
 ## Como Utilizar
-1. Explorar as Imagens
+1. **Explorar as Imagens**
 
 * Navegue pelas capturas de tela para ver exemplos visuais de como o LSP melhora a experiência de desenvolvimento no Sublime Text.
 
-2. Referência Rápida
+2. **Referência Rápida**
 
 * Utilize as imagens como uma referência rápida para verificar como ativar e usar diferentes funcionalidades do LSP no seu ambiente de desenvolvimento.
 
-3. Solucionar Problemas
+3. **Solucionar Problemas**
 
 * Se encontrar problemas durante a configuração, compare com as capturas de tela para garantir que seguiu corretamente cada etapa do guia.
 
