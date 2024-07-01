@@ -1,4 +1,4 @@
-# Configuracao Sublime - LSP
+# Configuração do Sublime Text 4 com LSP
 
 # 1. Instalar o ccls
 
