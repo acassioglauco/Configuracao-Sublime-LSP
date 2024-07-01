@@ -12,6 +12,6 @@ Aqui estão os pacotes instalados no meu Sublime Text 4 (Build 4169):
 > [!WARNING]
 > [SublimeLinter](https://www.sublimelinter.com/en/master/) (Instalado mas desativado...)
 
-# Nota de rodapé: 
+# Nota: 
 Esta configuração é baseada nas minhas preferências de usuário e nos pacotes instalados no [Sublime Text 4 (Build 4169)](https://www.sublimetext.com), está funcionando perfeitamente e sem erros.
 
