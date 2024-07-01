@@ -13,5 +13,5 @@ Aqui estão os pacotes instalados no meu Sublime Text 4 (Build 4169):
 > [SublimeLinter](https://www.sublimelinter.com/en/master/) (Instalado mas desativado...)
 
 # Nota: 
-Esta configuração é baseada nas minhas preferências de usuário e nos pacotes instalados no [Sublime Text 4 (Build 4169)](https://www.sublimetext.com), está funcionando perfeitamente e sem erros.
+Esta configuração é baseada nas minhas preferências de usuário e nos pacotes instalados no [Sublime Text 4 (Build 4169)](https://www.sublimetext.com) instalado no macOS Monterey Versão 12.7.4, está funcionando perfeitamente e sem erros.
 
