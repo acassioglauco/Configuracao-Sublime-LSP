@@ -36,4 +36,4 @@ Todas as capturas de tela na pasta "Telas" comprovam que a configuração está 
 * Se encontrar problemas durante a configuração, compare com as capturas de tela para garantir que seguiu corretamente cada etapa do guia.
 
 ## Conclusão
-A pasta "Telas" é um recurso valioso para qualquer desenvolvedor que deseja maximizar sua produtividade e eficiência com o Sublime Text e o Language Server Protocol. As capturas de tela fornecem uma prova visual de uma configuração bem-sucedida, destacando a ampla gama de funcionalidades disponíveis e sua aplicação prática em um ambiente de desenvolvimento real.
+A pasta "Telas" é uma prova valiosa para qualquer desenvolvedor que deseja maximizar sua produtividade e eficiência com o Sublime Text e o Language Server Protocol. As capturas de tela fornecem uma prova visual de uma configuração bem-sucedida, destacando a ampla gama de funcionalidades disponíveis e sua aplicação prática em um ambiente de desenvolvimento real.
