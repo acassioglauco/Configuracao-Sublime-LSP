@@ -202,9 +202,9 @@ Passos para configurar o FastOlympicCoding no Sublime Text
 Instale o FastOlympicCoding (se ainda não tiver):
 
 Abra o Sublime Text.
-Pressione Ctrl+Shift+P (ou Cmd+Shift+P no macOS) para abrir o console de comandos.
-Digite Package Control: Install Package e selecione a opção.
-Na lista de pacotes disponíveis, digite FastOlympicCoding e selecione para instalar.
+Pressione `Ctrl+Shift+P` (ou `Cmd+Shift+P` no macOS) para abrir o console de comandos.
+Digite `Package Control: Install Package` e selecione a opção.
+Na lista de pacotes disponíveis, digite `FastOlympicCoding` e selecione para instalar.
 Configure o FastOlympicCoding para C++17:
 
 Você precisará editar as configurações do FastOlympicCoding para garantir que ele compile seu código com a opção `-std=c++17`.
