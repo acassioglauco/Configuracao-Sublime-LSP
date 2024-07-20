@@ -47,7 +47,7 @@ Certifique-se de substituir `/path/to/cache` por um caminho válido onde o ccls 
 
 # 3. Verificar a Configuração do Projeto
 > [!NOTE]
-> Para garantir que o ccls funcione corretamente com o Sublime Text e reconheça erros em qualquer arquivo C++, você precisará criar um projeto na pasta desejada e adicionar as configurações específicas ao arquivo do projeto.
+> Para garantir que o ccls funcione corretamente com o Sublime Text e reconheça erros em qualquer arquivo C++, você precisará criar um projeto na pasta desejada e adicionar as configurações específicas ao arquivo do projeto chame de `MeuProjeto.sublime-project` por exemplo:
 
 
 ```json
