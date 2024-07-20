@@ -98,37 +98,51 @@ Arquivo de Configuração do LSP (`LSP.sublime-settings`)
 
 ```json
 {
-    "clients": {
-        "ccls": {
-            "command": ["ccls"],
-            "selector": "source.c++, source.c",
-            "initializationOptions": {
-                "cache": {
-                    "directory": "~/Library/Caches/ccls"
-                }
-            }
-        }
+  "clients": {
+    "ccls": {
+      "command": ["ccls"],
+      "enabled": true,
+      "languageId": "cpp",
+      "scopes": ["source.c", "source.cpp"],
+      "syntaxes": ["Packages/C++/C++.sublime-syntax"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "clang": {
+          "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0"
+        },
+        "compilationDatabaseDirectory": "",
+        "index": {
+          "threads": 2
+        },
+        "highlight": { "lsRanges": true }
+      }
     }
+  }
 }
 ```
-Arquivo de Projeto (`Project.sublime-project`)
+Arquivo de Projeto (`MeuProjeto.sublime-project`)
 ```json
+
 {
-    "folders":
-    [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
-        "LSP": {
-            "ccls": {
-                "command": ["ccls"],
-                "enabled": true
-            }
-        }
+  "folders":
+  [
+    {
+      "path": "."
     }
+  ],
+  "settings":
+  {
+    "LSP": {
+      "ccls": {
+        "command": ["ccls"],
+        "enabled": true
+      }
+    }
+  }
 }
+
 ```
 # 8. Reinstalar o LSP e o Cliente C++
 Se tudo mais falhar, tente reinstalar o pacote LSP e o cliente C++ no Sublime Text.
