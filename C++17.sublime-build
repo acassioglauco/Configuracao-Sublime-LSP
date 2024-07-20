@@ -1,0 +1,7 @@
+{
+    "cmd": ["g++", "-std=c++17", "-o", "$file_base_name", "$file"],
+    "file_regex": "^(...*?):([0-9]+)",
+    "selector": "source.c, source.c++",
+
+    "shell": true
+}
