@@ -1,0 +1,60 @@
+{
+    "lint_enabled": true,
+    "languages": {
+        "cpp": {
+            "compile": "g++ -std=c++17 -Wall -Wextra -Wshadow -fsanitize=address,undefined -D_GLIBCXX_DEBUG ${file} -o ${file_path}/${file_base_name}",
+            "run": "${file_path}/${file_base_name}"
+        }
+    },
+    "run_settings": [
+        {
+            "name": "C++",
+            "extensions": ["cpp"],
+            "compile_cmd": "g++ -std=c++17 '{source_file}' -o {file_name}",
+            "run_cmd": "./\"{file_name}\" {args} -debug",
+            "lint_compile_cmd": "g++ -std=c++17 '{source_file}' -I '{source_file_dir}'"
+        }
+    ],
+    "stress_time_limit_seconds": 2,
+    "cpp_complete_enabled": true,
+    "cpp_complete_settings": {
+        "classes": {
+            "int": {
+                "template_size": 0
+            },
+            "char": {
+                "template_size": 0
+            },
+            "string": {
+                "template_size": 0
+            },
+            "pair": {
+                "template_size": 2
+            },
+            "vector": {
+                "template_size": 1
+            },
+            "bool": {
+                "template_size": 0
+            },
+            "ll": {
+                "template_size": 0
+            },
+            "double": {
+                "template_size": 0
+            },
+            "set": {
+                "template_size": 1,
+                "bind": "S"
+            },
+            "map": {
+                "template_size": 2
+            }
+        },
+        "dont_expand": [
+            "pii"
+        ]
+    },
+    "close_sidebar": true,
+    "tests_relative_dir": ""
+}
