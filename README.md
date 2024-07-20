@@ -155,10 +155,10 @@ Estou usando a versão do clang é `15.0.0`. Para garantir a precisão, confirme
 ```
 clang -print-resource-dir
 ```
-Suponha que o comando retorne algo como /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0.
+Suponha que o comando retorne algo como `/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0`.
 
 # 10. Atualizar o arquivo .ccls para usar C++17
-Crie ou edite o arquivo .ccls no diretório raiz do seu projeto para incluir:
+Crie ou edite o arquivo `.ccls` no diretório raiz do seu projeto para incluir:
 Depois, verifique se o arquivo .ccls está configurado corretamente para usar o padrão C++17:
 
 ```
@@ -167,7 +167,7 @@ Depois, verifique se o arquivo .ccls está configurado corretamente para usar o 
 ```
 
 # 11. Verifique a configuração do LSP no Sublime Text
-Abra o comando do Package Control (Ctrl+Shift+P), digite Preferences: LSP Settings e selecione-o. Adicione a configuração para o ccls, certificando-se de usar o diretório de recursos correto:
+Abra o comando do Package Control (`Ctrl+Shift+P`), digite `Preferences: LSP Settings` e selecione-o. Adicione a configuração para o ccls, certificando-se de usar o diretório de recursos correto:
 Certifique-se de que a configuração do LSP está corretamente especificada para usar o `ccls` e apontar para o diretório de recursos correto. Adicione ou edite a configuração no LSP Settings:
 
 ```json
@@ -194,6 +194,68 @@ Certifique-se de que a configuração do LSP está corretamente especificada par
       }
     }
   }
+}
+```
+
+# 12. Configuração do FastOlympicCoding
+Passos para configurar o FastOlympicCoding no Sublime Text
+Instale o FastOlympicCoding (se ainda não tiver):
+
+Abra o Sublime Text.
+Pressione Ctrl+Shift+P (ou Cmd+Shift+P no macOS) para abrir o console de comandos.
+Digite Package Control: Install Package e selecione a opção.
+Na lista de pacotes disponíveis, digite FastOlympicCoding e selecione para instalar.
+Configure o FastOlympicCoding para C++17:
+
+Você precisará editar as configurações do FastOlympicCoding para garantir que ele compile seu código com a opção `-std=c++17`.
+
+Abra as configurações do FastOlympicCoding:
+Pressione `Ctrl+Shift+P` (ou `Cmd+Shift+P` no macOS) para abrir o console de comandos.
+Digite `Preferences: FastOlympicCoding Settings` e selecione a opção.
+Adicione ou modifique as configurações de compilação para C++17:
+
+```json
+{
+    "languages": {
+        "cpp": {
+            "compile": "clang++ -std=c++17 -Wall -Wextra -Wshadow -fsanitize=address,undefined -D_GLIBCXX_DEBUG ${file} -o ${file_path}/${file_base_name}",
+            "run": "${file_path}/${file_base_name}"
+        }
+    }
+}
+```
+
+## Exemplo Completo de Configuração
+Aqui está uma configuração completa para o FastOlympicCoding, incluindo comandos de compilação e execução para C++17:
+
+Abra as configurações do FastOlympicCoding:
+
+1. Pressione `Ctrl+Shift+P` (ou `Cmd+Shift+P` no macOS).
+- Digite `Preferences: FastOlympicCoding Settings` e selecione.
+2. Adicione ou substitua as configurações pelo seguinte:
+  Garanta que a configuração de compilação está usando o padrão C++17:
+  ```json
+  {
+    "languages": {
+        "cpp": {
+            "compile": "g++ -std=c++17 -Wall -Wextra -Wshadow -fsanitize=address,undefined -D_GLIBCXX_DEBUG ${file} -o ${file_path}/${file_base_name}",
+            "run": "${file_path}/${file_base_name}"
+        }
+    }
+}
+```
+Se estiver usando `clang++` em vez de `g++`, substitua `g++` por `clang++` na configuração.
+
+2. Verifique a Versão do Compilador
+Certifique-se de que o compilador que você está usando suporta C++17. No macOS, o compilador pode ser `clang++`, e a configuração deve ser algo como:
+```json
+{
+    "languages": {
+        "cpp": {
+            "compile": "clang++ -std=c++17 -Wall -Wextra -Wshadow -fsanitize=address,undefined -D_GLIBCXX_DEBUG ${file} -o ${file_path}/${file_base_name}",
+            "run": "${file_path}/${file_base_name}"
+        }
+    }
 }
 ```
 
