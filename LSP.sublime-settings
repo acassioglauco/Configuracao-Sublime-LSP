@@ -1,0 +1,24 @@
+{
+  "clients": {
+    "ccls": {
+      "command": ["ccls"],
+      "enabled": true,
+      "languageId": "cpp",
+      "scopes": ["source.c", "source.cpp"],
+      "syntaxes": ["Packages/C++/C++.sublime-syntax"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "clang": {
+          "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0"
+        },
+        "compilationDatabaseDirectory": "",
+        "index": {
+          "threads": 2
+        },
+        "highlight": { "lsRanges": true }
+      }
+    }
+  }
+}
