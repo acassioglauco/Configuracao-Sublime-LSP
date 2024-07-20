@@ -121,6 +121,56 @@ Arquivo de Projeto (`Project.sublime-project`)
 # 8. Reinstalar o LSP e o Cliente C++
 Se tudo mais falhar, tente reinstalar o pacote LSP e o cliente C++ no Sublime Text.
 
+
+# 9. Verifique o diretório de recursos do clang
+Encontre o diretório de recursos do clang:
+Estou usando a versão do clang é `15.0.0`. Para garantir a precisão, confirme o diretório de recursos abrindo o terminal e executando:
+
+```
+clang -print-resource-dir
+```
+Suponha que o comando retorne algo como /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0.
+
+# 10. Atualizar o arquivo .ccls para usar C++17
+Crie ou edite o arquivo .ccls no diretório raiz do seu projeto para incluir:
+Depois, verifique se o arquivo .ccls está configurado corretamente para usar o padrão C++17:
+
+```
+%clang
+-std=c++17
+```
+
+# 11. Verifique a configuração do LSP no Sublime Text
+Abra o comando do Package Control (Ctrl+Shift+P), digite Preferences: LSP Settings e selecione-o. Adicione a configuração para o ccls, certificando-se de usar o diretório de recursos correto:
+Certifique-se de que a configuração do LSP está corretamente especificada para usar o `ccls` e apontar para o diretório de recursos correto. Adicione ou edite a configuração no LSP Settings:
+
+```json
+{
+  "clients": {
+    "ccls": {
+      "command": ["ccls"],
+      "enabled": true,
+      "languageId": "cpp",
+      "scopes": ["source.c", "source.cpp"],
+      "syntaxes": ["Packages/C++/C++.sublime-syntax"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "clang": {
+          "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0"
+        },
+        "compilationDatabaseDirectory": "",
+        "index": {
+          "threads": 2
+        },
+        "highlight": { "lsRanges": true }
+      }
+    }
+  }
+}
+```
+
 ## Resumo
 Certifique-se de que `ccls` está instalado usando o Homebrew.
 Configure o `LSP` corretamente no Sublime Text.
