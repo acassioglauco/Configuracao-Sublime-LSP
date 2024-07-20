@@ -1,0 +1,17 @@
+{
+  "folders":
+  [
+    {
+      "path": "."
+    }
+  ],
+  "settings":
+  {
+    "LSP": {
+      "ccls": {
+        "command": ["ccls"],
+        "enabled": true
+      }
+    }
+  }
+}
