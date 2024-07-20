@@ -18,17 +18,28 @@ Abra as configurações do LSP no Sublime Text e adicione a configuração para 
 2. Adicione a configuração para ccls:
 ```json
 {
-    "clients": {
-        "ccls": {
-            "command": ["ccls"],
-            "selector": "source.c++, source.c, source.cpp",
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/path/to/cache"   // ~/Library/Caches/ccls
-                }
-            }
-        }
+  "clients": {
+    "ccls": {
+      "command": ["ccls"],
+      "enabled": true,
+      "languageId": "cpp",
+      "scopes": ["source.c", "source.cpp"],
+      "syntaxes": ["Packages/C++/C++.sublime-syntax"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "clang": {
+          "resourceDir": "/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0"
+        },
+        "compilationDatabaseDirectory": "",
+        "index": {
+          "threads": 2
+        },
+        "highlight": { "lsRanges": true }
+      }
     }
+  }
 }
 
 ```
@@ -41,20 +52,21 @@ Certifique-se de substituir `/path/to/cache` por um caminho válido onde o ccls 
 
 ```json
 {
-    "folders":
-    [
-        {
-            "path": "."    // Aqui pode ser o caminho raiz da sua pasta, desde que crie o projeto aqui também...
-        }
-    ],
-    "settings": {
-        "LSP": {
-            "ccls": {
-                "command": ["ccls"],
-                "enabled": true
-            }
-        }
+  "folders":
+  [
+    {
+      "path": "."
     }
+  ],
+  "settings":
+  {
+    "LSP": {
+      "ccls": {
+        "command": ["ccls"],
+        "enabled": true
+      }
+    }
+  }
 }
 ```
 
